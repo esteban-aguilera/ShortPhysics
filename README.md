@@ -1,1 +1,1 @@
-Repository with short Physics code.
+Repository of short and useful Physics packages.

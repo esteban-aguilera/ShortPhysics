@@ -177,6 +177,9 @@ def plot_magnetization(pos, mag, figax=None):
     # extract the data from position and magnetization.
     X, Y, Z = pos[:,0], pos[:,1], pos[:,2]
     Mx, My, Mz = mag[:,0], mag[:,1], mag[:,2]
+    
+    # delete unused variable
+    del Z
 
     # normalize Mz to obtain colors.
     color = 2 * Mz / (np.max(Mz) - np.min(Mz))
